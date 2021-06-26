@@ -1,0 +1,274 @@
+/*HTML & Body-----------------------------------------------------------------------------*/
+html,
+body {
+  height: 100%;
+  padding: 0%;
+  margin: 0%;
+  text-align: ltr;
+  overflow-y: hidden;
+}
+
+/*Container-------------------------------------------------------------------------------*/
+#container {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 1.4fr 0.5fr 9fr;
+  background-color: rgb(230, 238, 236);
+  background-image: url("Utilities/math1.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-y: scroll;
+}
+
+/*Header-----------------------------------------------------------------------------------*/
+header {
+  grid-column: span 12;
+  min-height: 170px;
+}
+
+#logo {
+  height: 80px;
+  margin-top: 4.5%;
+  margin-left: 5px;
+}
+
+/*Nav Bar-----------------------------------------------------------------------------------*/
+.navbar {
+  height: 40px;
+  grid-column: span 12;
+  box-shadow: 6px 6px 5px rgb(75, 99, 100);
+  padding: 0%;
+  border-top: 1px solid rgb(113, 175, 184);
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.form-control {
+  /*search input*/
+  width: 15%;
+}
+
+.menuItem {
+  font-size: 18px;
+  color: rgb(113, 175, 184);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 0%;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.menuItem:hover {
+  color: rgb(19, 136, 97);
+}
+/*Mobile Compatibilty*/
+@media screen and (max-width: 600px) {
+  .srcInp {
+    width: 73%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .menuItem {
+    margin: 0%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  nav {
+    min-height: 80px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #logo {
+    height: 46px;
+    margin-top: 120px;
+  }
+}
+.srcForm > * {
+  height: 30px;
+}
+
+/*Main--------------------------------------------------------------------------*/
+main {
+  grid-column: span 12;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.76);
+}
+
+#throbberWrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#throbber {
+  height: 170px;
+}
+
+/*Modal----*/
+
+.modal-header {
+  background-image: url("Utilities/math1.jpg");
+}
+
+.modal-footer {
+  background-color: rgb(36, 105, 103);
+  height: 5px;
+  padding: 0%;
+}
+
+.rmvItm {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+/*Home Page----------------------------------------------------------------------*/
+/*Main Cards---*/
+.coinCard {
+  position: relative;
+  margin: 15px;
+  box-shadow: -2px 7px 7px rgb(139, 149, 149);
+}
+
+#cardContainer {
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  background-color: rgba(230, 238, 236, 0);
+  overflow-y: hidden;
+}
+
+#cardThrobber {
+  height: 40px;
+}
+.cardHead > * {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*Search Cards---*/
+#searchContainer {
+  display: flex;
+  justify-content: center;
+}
+
+/*Card Toggle----*/
+.custom-control-input:focus ~ .custom-control-label::before {
+  border-color: rgb(132, 136, 135) !important;
+  box-shadow: 0 0 0 0rem rgba(0, 0, 0, 0) !important;
+}
+
+.custom-control-input:checked ~ .custom-control-label::before {
+  border-color: rgb(132, 136, 135) !important;
+  background-color: rgb(113, 184, 169) !important;
+}
+
+/*Live Reports---------------------------------------------------------------------*/
+.canvasjs-chart-container {
+  margin-top: 60px;
+}
+
+.canvasjs-chart-canvas {
+  border: solid black 1px;
+}
+
+/*About----------------------------------------------------------------------------*/
+#mobileAbout {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+#myAbout {
+  height: 100%;
+  width: 100%;
+  background-image: url("Utilities/abg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  overflow: visible;
+  justify-content: space-between;
+  page-break-inside: avoid;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#a1 {
+  opacity: 0;
+  animation: fadeIn 5s 1s;
+  -webkit-animation: fadeIn 5s 1s;
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+  max-height: 50px;
+  margin-top: 300px;
+  margin-left: 0px;
+}
+
+#a2 {
+  opacity: 0;
+  animation: fadeIn 5s 3.5s;
+  -webkit-animation: fadeIn 5s 3.5s;
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+  max-height: 220px;
+  margin-top: 100px;
+  margin-left: 0px;
+}
+
+#a3 {
+  opacity: 0;
+  animation: fadeIn 5s 5s;
+  -webkit-animation: fadeIn 5s 5s;
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+  max-height: 190px;
+  margin-top: 330px;
+  margin-left: 100px;
+}
+
+#a4 {
+  opacity: 0;
+  animation: fadeIn 5s 6.5s;
+  -webkit-animation: fadeIn 5s 6.5s;
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+  max-height: 340px;
+  margin-top: 340px;
+  margin-left: 0px;
+}
+
+#a5 {
+  opacity: 0;
+  animation: fadeIn 5s 8s;
+  -webkit-animation: fadeIn 5s 8s;
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+  max-height: 300px;
+  margin-top: 80px;
+  margin-right: 200px;
+}

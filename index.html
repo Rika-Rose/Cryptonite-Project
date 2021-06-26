@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!--Head-------------------------------------------------------------------------------------------------------->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cryptonite Project - Rika-Rose</title>
+    <link rel="shortcut icon" href="Utilities/cryptoicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
+      integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX"
+      crossorigin="anonymous"
+    />
+    <script src="jquery-3.6.0.js"></script>
+    <script src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+    <script src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <!--Body-------------------------------------------------------------------------------------------------------->
+  <body>
+    <section id="container">
+      <!--Header----------------------->
+      <header class="parallax">
+        <img src="Utilities/cryptologo.png" id="logo" />
+      </header>
+
+      <!--Navbar----------------------->
+      <nav
+        class="navbar navbar-light navbar-expand-lg justify-content-around"
+        style="background-color: #0f3838"
+      >
+        <a href="#" class="menuItem nav-link" id="homeBtn">Home</a>
+        <a href="#" class="menuItem nav-link" id="liveBtn">Live Reports</a>
+        <a href="#" class="menuItem nav-link" id="aboutBtn">About</a>
+        <form class="form-inline srcForm">
+          <input
+            class="form-control mr-sm-2 srcInp"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+
+          <button
+            class="
+              btn btn-outline-success
+              my-2 my-sm-0
+              srcBtn
+              justify-content-center
+            "
+            type="button"
+            style="
+              color: rgb(113, 175, 184);
+              border: solid rgb(113, 175, 184) 1px;
+            "
+          >
+            Search
+          </button>
+        </form>
+      </nav>
+      <!--Main-------------------------->
+      <!--Modal-------->
+      <div
+        class="modal"
+        tabindex="-1"
+        role="dialog"
+        id="myModal"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title mx-auto text-center">
+                You may only select 5 coins at a time. <br />
+                Which coin would you like to remove?
+              </h4>
+              <button
+                type="button"
+                class="close"
+                id="modalCloseBtn"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body"></div>
+          </div>
+          <div class="modal-footer"></div>
+        </div>
+      </div>
+      <main>
+        <!--Throbber----->
+        <div id="throbberWrapper">
+          <img id="throbber" src="Utilities/ringb.gif" />
+        </div>
+        <!--Cards----->
+        <span id="cardContainer"> </span>
+        <span id="searchContainer"> </span>
+      </main>
+    </section>
+  </body>
+</html>
