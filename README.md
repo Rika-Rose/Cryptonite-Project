@@ -1,10 +1,18 @@
-# Cryptonite-Project
+Note: This project serves as a foundational example of my early work in JavaScript and jQuery (2021). <br/>
+I am currently refactoring my portfolio to showcase modern React and TypeScript implementations.
 
-Hi, <br>
-this is my Crypto-Currency project for my John-Bryce Fullstack web develpoment course.<br>
-In this project, we were required to display crypto currencies from an api,<br>
-allowing for additional information to be displayed when requested, and giving the option to mark up to 5 coins.<br>
-As a bonus excercise, I also gave the user the option to display live currency report to compare his chosen coins in.<br>
-In the 'About' section of the project, you can find out a bit more about me.<br>
-Thank you for looking through.<br>
-Rika-Rose
+
+# Cryptonite: Real-Time Crypto Dashboard
+A high-performance, single-page application (SPA) designed to track and visualize real-time cryptocurrency data.
+
+Key Technical Features:
+Asynchronous Data Fetching: Integrated with RESTful APIs to display live currency data and detailed coin information.
+
+State Management: Custom logic to handle user selections (limit of 5 coins) with real-time validation.
+
+Live Data Visualization: Implementation of dynamic reporting to compare chosen currencies in real-time.
+
+Responsive UI/UX: Built with a focus on clean design and mobile-first responsiveness.
+
+
+
